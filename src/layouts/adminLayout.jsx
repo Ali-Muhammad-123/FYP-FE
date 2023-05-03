@@ -45,8 +45,11 @@ function AdminLayout(props) {
 							<Link to="/admin/submittedProposals">
 								<MenuItem>Submitted Proposals</MenuItem>
 							</Link>
-							<Link to="/admin/	">
+							<Link to="/admin/assignGroups">
 								<MenuItem>Assign Groups</MenuItem>
+							</Link>
+							<Link to="/admin/setExam">
+								<MenuItem>Set Examination</MenuItem>
 							</Link>
 							<MenuItem>Iteration Plan</MenuItem>
 							<SubMenu label="Announcements">

@@ -124,7 +124,7 @@ function AssignGroups(props) {
 						},
 					]}
 					data={data}
-					actions={panels.map((el, i) => {
+					actions={panels?.map((el, i) => {
 						return {
 							icon: () => <div>{i + 1}</div>,
 							tooltip: `Assign to panel ${i + 1}`,

@@ -11,6 +11,7 @@ import AddStudent from "./pages/admin/addStudent";
 import LoginPage from "./pages/login";
 import SubmittedProposals from "./pages/admin/submittedProposals";
 import AssignGroups from "./pages/admin/assignGroups";
+import ActiveExam from "./pages/admin/activeExam";
 const AdvisorForm = React.lazy(() => import("./pages/advisorForm"));
 const FYPDetails = React.lazy(() => import("./pages/admin/FYPDetails"));
 
@@ -86,6 +87,14 @@ const router = createBrowserRouter([
 				element: (
 					<React.Suspense fallback={<>...</>}>
 						<AssignGroups />
+					</React.Suspense>
+				),
+			},
+			{
+				path: "/admin/setExam",
+				element: (
+					<React.Suspense fallback={<>...</>}>
+						<ActiveExam />
 					</React.Suspense>
 				),
 			},
