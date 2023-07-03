@@ -57,7 +57,9 @@ function AdminLayout(props) {
 							</SubMenu>
 
 							<MenuItem>Resources</MenuItem>
-							<MenuItem>Results</MenuItem>
+							<Link to="/admin/results">
+								<MenuItem>Results</MenuItem>
+							</Link>
 							<MenuItem>Current Projects</MenuItem>
 							<MenuItem>Panel Details</MenuItem>
 							<MenuItem>Open Ideas</MenuItem>
