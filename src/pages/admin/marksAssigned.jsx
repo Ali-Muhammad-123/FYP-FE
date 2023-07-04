@@ -123,7 +123,7 @@ function MarksAssigned(props) {
 			// "Formatting",
 			"Working Demo of Project",
 			"Documentation",
-			"Test Cases, Design and Development",
+			"Test Cases - Design and Development",
 			"Remarks",
 		],
 	};

@@ -1,6 +1,5 @@
 import React from "react";
 import rocket from "../assets/rocket.svg";
-import pencil_rocket from "../assets/Final_pencil.png";
 
 function Home(props) {
 	return (
@@ -62,9 +61,7 @@ function Home(props) {
 					</div>
 				</div>
 			</div>
-			<div class=" flex w-full overflow-hidden rounded-md border border-slate-200 shadow">
-				<img src={pencil_rocket} style={{ width: "100%" }} />
-			</div>
+			<div class=" flex w-full overflow-hidden rounded-md border border-slate-200 shadow"></div>
 		</div>
 	);
 }
