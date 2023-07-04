@@ -85,6 +85,7 @@ function MarksAssigned(props) {
 											el[resp.data.activeExam.activeExam].presentation,
 										remarks: el[resp.data.activeExam.activeExam].remarks,
 										srs: el[resp.data.activeExam.activeExam].srs,
+										code: el[resp.data.activeExam.activeExam].code,
 										group: group?.projectTitle,
 									};
 							}
@@ -104,10 +105,11 @@ function MarksAssigned(props) {
 				email: el.email,
 				group: el.group,
 				erd: el.erd,
-				formatting: el.formatting,
+				// formatting: el.formatting,
 				presentation: el.presentation,
-				remarks: el.remarks,
 				srs: el.srs,
+				code: el.code,
+				remarks: el.remarks,
 			};
 		}),
 		filename: "results",
@@ -117,11 +119,12 @@ function MarksAssigned(props) {
 			"Registration Number",
 			"E-Mail",
 			"Group",
-			"ERD",
-			"Formatting",
-			"Presentation",
+			"Questions & Answers",
+			// "Formatting",
+			"Working Demo of Project",
+			"Documentation",
+			"Test Cases, Design and Development",
 			"Remarks",
-			"SRS",
 		],
 	};
 
@@ -147,15 +150,15 @@ function MarksAssigned(props) {
 							field: "group",
 						},
 						{
-							title: "ERD",
+							title: "Qurstions and Answers",
 							field: "erd",
 						},
+						// {
+						// 	title: "Formatting",
+						// 	field: "formatting",
+						// },
 						{
-							title: "Formatting",
-							field: "formatting",
-						},
-						{
-							title: "Presentation",
+							title: "Working demo",
 							field: "presentation",
 						},
 						{
@@ -163,8 +166,12 @@ function MarksAssigned(props) {
 							field: "remarks",
 						},
 						{
-							title: "SRS",
+							title: "Documentation",
 							field: "srs",
+						},
+						{
+							title: "Test cases",
+							field: "code",
 						},
 					]}
 					data={data}
